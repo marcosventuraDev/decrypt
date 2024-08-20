@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icon/icon.svg" type="image/x-icon">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="container column">
+        <div class="header">
+            <img src="assets/icon/icon.svg" alt="Meu Logo">
+        </div>
+        <div class="content">
+
+            <div class=" areaWork column">
+
+                <div class="text-content">
+                    <input type="text" placeholder="Digite seu texto" id="text" autofocus >
+                </div>
+                <div class="column">
+
+
+                    <div class="info">
+                        <div class="circle-exclamation"></div> letras minúsculas e sem acento.
+                    </div>
+                    <div class=" button">
+
+                        <input type="button" onclick="encrypt()" class="btn fist-button" value="Codificar"></input>
+                        <input type="button" onclick="decrypt()" class="btn" value="Descodificar"></input>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="response column" id="area-response">
+                <div class="column" id="response">
+                    <div class="column">
+                        <img src="assets/imgs/High-quality-products-1-1.png" alt="" srcset="">
+                    </div>
+                    <div class="column">
+                        <p><b>Nenhuma mensagem encontrada</b></p>
+                        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="assets/js/scritp.js"></script>
+</body>
+
+</html>

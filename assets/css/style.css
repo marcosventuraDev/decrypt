@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    /* ====Colors ====*/
+
+    --body-color:#D8DFE8;
+    --white-color:#fff;
+    --text-color:  #0A3871;
+    --second-btn:#E8E8E8;
+    --alert-color: #495057;
+  
+       /*===Transitions ===*/
+
+    --trans-02:all 0.2s ease;
+    --trans-03:all 0.3s ease;
+    --trans-04:all 0.4s ease;
+    --trans-05:all 0.5s ease;
+
+}
+
+body{
+    background-color: var(--body-color);
+    
+    font-family: sans-serif;
+    
+}
+
+.row,.column, .content,.container{
+    display: flex;
+}
+.row{
+   
+    flex-direction: row;
+}
+.column{
+    flex-direction: column;
+
+}
+.content{
+    
+    width: 80vw;
+    height: 80vw;
+    margin: auto;
+    padding: 20px;
+    
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  
+}
+.header{
+    height: 50px;
+    padding: 10px;
+}
+
+.header img{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    width: 100px;
+   
+}
+.text-content input{
+    border: none;
+    background-color: var(--body-color);
+    
+    font-size:xx-large;
+    width: 100%;
+    color: var(--text-color);
+}
+.text-content input::placeholder{
+    color: var(--text-color);
+
+}
+.text-content input:focus{
+outline: none;
+}
+.text-content{
+    height: 90%;
+    margin-bottom: 20px;
+   
+}
+.areaWork{
+    margin: 10px;
+    height: 98%;
+    width: 100%;
+    
+    display: flex;
+    
+}
+.info{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+.btn{
+   
+    width: 50%;
+    border-radius: 10px;
+    background-color: var(--second-btn);
+    color: var(--text-color);
+    align-items: center;
+    padding: 15px 10px;
+    text-align: center;
+    align-items: center;
+    border: 1px solid var(--text-color);
+    
+}
+.button{
+    width: 100%;
+display: flex;
+     align-items: end;
+   text-align: end;
+}
+
+.button input{
+    margin: 0 20px;
+}
+.fist-button{
+    background-color: var(--text-color);
+    color: var(--white-color);
+}
+.response{
+    width: 40%;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    font-size: large;
+}
+.response img{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#copiar{
+    position: absolute;
+    bottom:25px;
+    cursor: pointer;
+}
+
+
+
+.circle-exclamation {
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--alert-color);
+    position: relative;
+    margin-right: 10px;
+}
+.circle-exclamation::before {
+    content: "!";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 10px;
+}
+
